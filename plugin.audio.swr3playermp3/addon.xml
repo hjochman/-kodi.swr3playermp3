@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.audio.swr3playermp3" name="SWR3 MP3 Livestream" version="0.2" provider-name="Hape">
+<addon id="plugin.audio.swr3playermp3" name="SWR3 Radio Livestream" version="0.3" provider-name="Hape">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.requests" version="2.22.0" />
+      <import addon="xbmc.python" version="3.0.0"/>
+  	<import addon="xbmc.addon" version="18.9.701"/>
+      <import addon="script.module.requests" version="2.31.0" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>audio</provides>
@@ -11,6 +12,10 @@
     <summary>SWR3 Live Radio</summary>
     <description>Radio MP3 Livestream</description>
     <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.png</fanart>
+    </assets>	
   </extension>
 </addon>
 
